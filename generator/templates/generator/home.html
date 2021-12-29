@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+  </head>
+
+<body>
+    <div class="container text-center">
+
+<h1>Password Generator!</h1>
+
+<form action="{%url 'password' %}">
+    <select name='length'>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select>
+    <br>
+
+    <label for="uppercase">UpperCase: </label>
+      <input id="uppercase" type="checkbox" name="UpperCase">
+    <br>
+
+    <label for="nums">Numbers: </label>
+      <input id="nums" type="checkbox" name="Numbers">
+    <br>
+
+    <label for="spcl">Special: </label>
+      <input id="spcl" type="checkbox" name="Special">
+    <br>
+
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+</form>
+<br>
+<a href="{%url 'about' %}">About Page</a>
+
+</div>>
+
+</body>
